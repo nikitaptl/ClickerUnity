@@ -15,12 +15,12 @@ namespace _Source.Core
             {GameResource.Gold, new ObservableInt(0)},
         };
     
-        void ChangeResource(GameResource resource, int value)
+        public void ChangeResource(GameResource resource, int value)
         {
             _storage[resource].Value += value;
         }
 
-        ObservableInt GetResource(GameResource resource)
+        public ObservableInt GetResource(GameResource resource)
         {
             return _storage[resource];
         }
