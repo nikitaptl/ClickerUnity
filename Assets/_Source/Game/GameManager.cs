@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     private ResourceBank _resourceBank = new ResourceBank();
     public ResourceBank ResourceBank => _resourceBank;
 
+    private ProductionLevels _productionLevels = new ProductionLevels();
+    public ProductionLevels ProductionLevels => _productionLevels;
+
     private void Awake()
     {
         _resourceBank.ChangeResource(GameResource.Humans, 10);

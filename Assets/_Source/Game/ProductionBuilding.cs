@@ -31,7 +31,7 @@ namespace _Source.Game
             button.interactable = false;
 
             float start = 0f;
-            float prodTime = _productionTime;
+            float prodTime = _productionTime * (1 - (float)gameManager.ProductionLevels.GetLevel(gameResource) / 100);
             while (start < prodTime)
             {
                 start += Time.deltaTime;
